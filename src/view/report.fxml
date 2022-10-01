@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context6" prefHeight="503.0" prefWidth="676.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportController">
+   <children>
+      <AnchorPane prefHeight="44.0" prefWidth="676.0" style="-fx-background-color: #013243;">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" text="Student Report">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#3ab2d7" />
+                        <Stop color="#21c931" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="565.0" layoutY="10.0" onAction="#BacktoindexOnAction" style="-fx-background-color: #16a085;" text="BACK TO HOME" />
+         </children></AnchorPane>
+      <TableView layoutX="14.0" layoutY="76.0" prefHeight="389.0" prefWidth="637.0">
+        <columns>
+          <TableColumn prefWidth="102.0" text="Student Id" />
+          <TableColumn prefWidth="86.0" text="Course Id" />
+            <TableColumn prefWidth="117.0" text="Course Duraton" />
+            <TableColumn prefWidth="153.0" text="Time" />
+            <TableColumn prefWidth="178.0" text="Course Payment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

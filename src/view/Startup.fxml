@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context1" prefHeight="409.0" prefWidth="565.0" style="-fx-background-color: #013243;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartupController">
+   <children>
+      <ImageView fitHeight="161.0" fitWidth="148.0" layoutX="209.0" layoutY="14.0">
+         <image>
+            <Image url="@../assests/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="178.0" layoutY="160.0" text="SIPSEWANA INSTITUTE ">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5333333333333333" endY="0.657142857142857" startX="0.44285714285714284" startY="0.3952380952380953">
+               <stops>
+                  <Stop color="#23cfc8" />
+                  <Stop color="#23cf51" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="189.0" layoutY="185.0" text="Panadura Branch Colombo" textFill="#adaead">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="205.0" text="Login Here" textFill="#aeaeae">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="246.0" text="User Name :" textFill="#b5b5b5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="296.0" text="Password    :" textFill="#b5b5b5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="241.0" layoutY="350.0" onAction="#OpenindexFormOnAction" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #16a085;" text="Login" />
+      <TextField layoutX="189.0" layoutY="244.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: #95a5a6;" />
+      <TextField layoutX="189.0" layoutY="294.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: #95a5a6;" />
+   </children>
+</AnchorPane>

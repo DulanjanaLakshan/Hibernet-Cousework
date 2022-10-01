@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context3" prefHeight="503.0" prefWidth="676.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentformController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="676.0" style="-fx-background-color: #013243;">
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" text="Student form">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.7238095238095238" startX="0.3952380952380952">
+                     <stops>
+                        <Stop color="#1eda60" />
+                        <Stop color="#42bbc7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="541.0" layoutY="8.0" onAction="#BacktoIndexPageOnAction" prefHeight="28.0" prefWidth="121.0" style="-fx-background-color: #16a085;" text="BACK TO HOME" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="109.0" text="Stduent ID :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="109.0" text="Student Name :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="109.0" text="NIC :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="166.0" text="Contact no :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="166.0" text="E-mail :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="480.0" layoutY="166.0" text="Address :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="112.0" layoutY="107.0" prefHeight="25.0" prefWidth="103.0" />
+      <JFXTextField fx:id="txtName" layoutX="336.0" layoutY="107.0" prefHeight="25.0" prefWidth="135.0" />
+      <JFXTextField fx:id="txtNIC" layoutX="516.0" layoutY="107.0" prefHeight="25.0" prefWidth="143.0" />
+      <JFXTextField fx:id="txtNumber" layoutX="112.0" layoutY="164.0" prefHeight="25.0" prefWidth="127.0" />
+      <JFXTextField fx:id="txtEmail" layoutX="297.0" layoutY="164.0" prefHeight="25.0" prefWidth="162.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="541.0" layoutY="164.0" prefHeight="25.0" prefWidth="114.0" />
+      <JFXButton buttonType="RAISED" layoutX="301.0" layoutY="221.0" onAction="#SaveOnAction" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #27ae60;" text="Save" />
+      <JFXButton buttonType="RAISED" layoutX="420.0" layoutY="221.0" onAction="#UpdateOnAction" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #f39c12;" text="Update" />
+      <JFXButton buttonType="RAISED" layoutX="536.0" layoutY="221.0" onAction="#DeleteOnAction" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e74c3c;" text="Delete" />
+      <TableView fx:id="tblStudent" layoutX="18.0" layoutY="252.0" prefHeight="231.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="Student ID" />
+          <TableColumn fx:id="colName" prefWidth="98.0" text="Student name" />
+            <TableColumn fx:id="colNIC" prefWidth="85.0" text="NIC" />
+            <TableColumn fx:id="colNumber" prefWidth="99.0" text="Contact no" />
+            <TableColumn fx:id="colEmail" prefWidth="124.0" text="E - mail" />
+            <TableColumn fx:id="colAddress" prefWidth="157.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context2" prefHeight="503.0" prefWidth="676.0" style="-fx-background-color: #336e7b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+   <children>
+      <ImageView fitHeight="328.0" fitWidth="316.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="287.0" text="SIPSEWANA INSTITUTE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7333333333333334" startX="0.4142857142857143" startY="0.34285714285714286">
+               <stops>
+                  <Stop color="#cdc428" />
+                  <Stop color="#59ff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="318.0" text="Panadura Branch Colombo" textFill="#bfbfbf">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgStudent" fitHeight="132.0" fitWidth="132.0" layoutX="312.0" layoutY="24.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/customers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCourse" fitHeight="133.0" fitWidth="132.0" layoutX="485.0" layoutY="145.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/items.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgStudentReport" fitHeight="132.0" fitWidth="132.0" layoutX="312.0" layoutY="252.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/report.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPayment" fitHeight="132.0" fitWidth="132.0" layoutX="485.0" layoutY="352.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/orders.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="496.0" layoutY="24.0" onAction="#openloginformOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #34495e;" text="Log out">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2bcd48" />
+                  <Stop color="#7c898a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <Label layoutX="18.0" layoutY="352.0" text="Self-Introduction for students in College looks pretty">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="371.0" text="Challenging, and it's because we have been School ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="388.0" text="Students for a Long time. College is a level up">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="405.0" text="and a new atmosphere.">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
